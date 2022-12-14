@@ -11,11 +11,12 @@ window.onload = function() {
   let noun = ["jogger", "racoon"];
   let com = ["com", "us"];
 
-  let pronounRandom = pronoun[Math.floor(Math.random() * 1) + 0];
-  console.log();
+  let pronounRandom = pronoun[Math.floor(Math.random() * 2) + 0];
+  let adjRandom = adj[Math.floor(Math.random() * 2) + 0];
+  let nounRandom = noun[Math.floor(Math.random() * 2) + 0];
+  let comRandom = com[Math.floor(Math.random() * 2) + 0];
 
-  return (document.getElementById("text").innerHTML = pronounRandom);
-  console.log("Hello Rigo from the console!");
+  let randomNames = pronounRandom + adjRandom + nounRandom + "." + comRandom;
+
+  return (document.getElementById("text").innerHTML = randomNames);
 };
-
-// Math.random() * (max - min) + min;
